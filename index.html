@@ -58,7 +58,7 @@
             <li>
               <a class="rail-link" href="#sec-java" data-topic="java">
                 <span class="rail-label">Java &amp; Spring</span>
-                <span class="rail-count" data-count>46</span>
+                <span class="rail-count" data-count>55</span>
               </a>
             </li>
             <li>
@@ -70,19 +70,19 @@
             <li>
               <a class="rail-link" href="#sec-sysdes" data-topic="sysdes">
                 <span class="rail-label">System design</span>
-                <span class="rail-count" data-count>22</span>
+                <span class="rail-count" data-count>20</span>
               </a>
             </li>
             <li>
               <a class="rail-link" href="#sec-infra" data-topic="infra">
                 <span class="rail-label">Infra &amp; ops</span>
-                <span class="rail-count" data-count>11</span>
+                <span class="rail-count" data-count>12</span>
               </a>
             </li>
             <li>
               <a class="rail-link" href="#sec-sql" data-topic="sql">
                 <span class="rail-label">SQL &amp; data</span>
-                <span class="rail-count" data-count>12</span>
+                <span class="rail-count" data-count>14</span>
               </a>
             </li>
             <li>
@@ -148,7 +148,7 @@
           <summary class="topic-head">
             <svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 3.5 5 4.5-5 4.5"></path></svg>
             <h2 class="topic-label">Java &amp; Spring</h2>
-            <span class="topic-count" data-count>45</span>
+            <span class="topic-count" data-count>55</span>
           </summary>
           <div class="topic-body">
             <ul class="rows">
@@ -158,15 +158,81 @@
                 <span class="row-kind">Notes</span>
               </a>
             </li>
-            <li data-keys="design patterns gof gang of four creational structural behavioral singleton factory method builder adapter decorator facade proxy strategy observer template method command chain of responsibility design-patterns.pdf java note">
+            <li data-keys="design patterns gof gang of four creational structural behavioral singleton eager lazy double-checked locking volatile enum singleton factory method static factory abstract factory builder telescoping constructor prototype copy constructor cloneable shallow deep copy adapter decorator facade proxy strategy observer template method command chain of responsibility patterns in the jdk design-patterns.pdf java note">
               <a class="row" href="/guide/design-patterns.pdf" target="_blank" rel="noopener" data-row>
                 <span class="row-title">Design patterns</span>
                 <span class="row-kind">Notes</span>
               </a>
             </li>
-            <li data-keys="oop object oriented programming four pillars encapsulation abstraction inheritance polymorphism information hiding leaky abstraction fragile base class alan kay messaging identity equality == equals hashcode contract reflexive symmetric transitive interned string pool immutability final defensive copy record compact constructor shallowly immutable abstract class interface default method diamond problem sealed type permits exhaustive switch expression problem static member method hiding constructor initialization order overridable method escape this overloading overriding static dispatch dynamic dispatch covariant return @override generics type erasure invariance covariance pecs producer extends consumer super wildcard composition delegation association aggregation ownership lifetime value object entity primitive obsession rich anemic domain model optional null object checked unchecked exception object-oriented-programming.pdf java note">
+            <li data-keys="oop oops object oriented programming four pillars class object blueprint instance constructor this keyword default constructor encapsulation data hiding private getter setter bankaccount inheritance extends is-a relationship animal dog superclass subclass polymorphism method overriding method overloading runtime compile time abstraction abstract class abstract method vehicle interface implements contract payment creditcard upi default method static method extends vs implements object-oriented-programming.pdf java note">
               <a class="row" href="/guide/object-oriented-programming.pdf" target="_blank" rel="noopener" data-row>
                 <span class="row-title">Object oriented programming</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="java 8 features lambda expression functional interface predicate function consumer supplier method reference constructor reference stream api pipeline filter map sorted distinct limit count reduce anymatch collect collectors tolist toset joining groupingby counting optional ofnullable orelse orelsethrow ispresent default method static method in interface diamond problem date and time api java.time localdate localtime localdatetime period duration datetimeformatter immutable java-8-features.pdf java note">
+              <a class="row" href="/guide/java-8-features.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">Java 8 features</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="java keywords reserved words access modifiers public private protected package private static final new class interface abstract extends implements super this if else switch case default for while do break continue return try catch finally throw throws int long double boolean char void instanceof enum synchronized volatile transient package import final vs finally vs finalize throw vs throws this vs super break vs continue keywords.pdf java note">
+              <a class="row" href="/guide/keywords.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">Java keywords</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="exception handling try catch finally throw throws multi catch multiple catch try with resources autocloseable throwable error exception runtimeexception checked unchecked exception hierarchy custom exception stack trace nullpointerexception arithmeticexception arrayindexoutofboundsexception numberformatexception illegalargumentexception ioexception sqlexception outofmemoryerror stackoverflowerror getmessage empty catch block exception-handling.pdf java note">
+              <a class="row" href="/guide/exception-handling.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">Exception handling</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="testing junit 5 jupiter test beforeeach aftereach beforeall afterall displayname nested disabled tag lifecycle assertions assertequals assertthrows assertall assertj assertthat assertthatthrownby parameterized test valuesource csvsource methodsource enumsource mockito mock injectmocks mockitoextension when thenreturn thenthrow doanswer verify times never argumentcaptor matchers eq any unnecessarystubbing test doubles dummy stub spy fake mockmvc webmvctest standalonesetup jsonpath andexpect andDo print arrange act assert given when then over-mocking testing.pdf java note">
+              <a class="row" href="/guide/testing.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">Testing</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="multithreading concurrency thread process runnable start run thread lifecycle states new runnable blocked waiting timed_waiting terminated race condition shared mutable state synchronized monitor lock volatile visibility atomicity atomicinteger atomiclong atomicreference compare and set reentrantlock trylock readwritelock deadlock livelock starvation lock ordering executorservice thread pool fixedthreadpool threadpoolexecutor shutdown future completablefuture supplyasync thencombine concurrenthashmap copyonwritearraylist blockingqueue putifabsent computeifabsent virtual threads java 21 carrier thread multithreading.pdf java note">
+              <a class="row" href="/guide/multithreading.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">Multithreading</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="collection framework collections overview hierarchy iterable collection list set queue deque map arraylist linkedlist copyonwritearraylist hashset linkedhashset treeset arraydeque priorityqueue stack vector hashmap linkedhashmap treemap concurrenthashmap keyset values entryset views getordefault putifabsent computeifabsent merge generics raw type concurrentmodificationexception fail-fast removeif list.of set.of map.of immutable null handling choosing a collection collection-framework.pdf java note">
+              <a class="row" href="/guide/collection-framework.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">Collection framework</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="spring boot auto-configuration autoconfiguration springbootapplication springbootconfiguration enableautoconfiguration componentscan autoconfiguration.imports spring.factories conditional annotations conditionalonclass conditionalonmissingbean conditionalonproperty conditionalonbean conditionalonwebapplication starters spring-boot-starter-web spring-boot-starter-data-jpa datasourceautoconfiguration configurationproperties enableconfigurationproperties debug condition evaluation report actuator conditions exclude override bean spring-boot.pdf java note">
+              <a class="row" href="/guide/spring-boot.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">Spring Boot</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="spring boot 2 two spring data jpa hibernate jakarta persistence entity table id generatedvalue identity sequence column enumerated string ordinal transient relationships onetomany manytoone onetoone manytomany mappedby joincolumn owning side cascade orphanremoval repository jparepository crudrepository derived query methods query modifying param pageable fetch type lazy eager n+1 join fetch entitygraph batchsize lazyinitializationexception open-in-view persistence context entitymanager managed detached removed dirty checking flush commit transactional propagation requires_new rollbackfor self-invocation proxy spring-boot-2.pdf java note">
+              <a class="row" href="/guide/spring-boot-2.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">Spring Boot 2</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="spring boot 3 three rest api development restcontroller requestmapping getmapping postmapping putmapping deletemapping pathvariable requestbody responseentity created location dto record request response mapper mapstruct service layer controller layer repository layer validation valid notblank email size positive spring-boot-starter-validation restcontrolleradvice exceptionhandler problemdetail rfc 7807 testing webmvctest mockmvc mockitobean springboottest testcontainers datajpatest pagination pageable springdoc openapi swagger actuator flyway liquibase spring-boot-3.pdf java note">
+              <a class="row" href="/guide/spring-boot-3.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">Spring Boot 3</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="spring boot 4 four microservices monolith modular monolith distributed monolith service boundary business capability api gateway spring cloud gateway routes predicates service discovery eureka kubernetes dns restclient webclient resttemplate http interface postexchange timeout events kafka kafkalistener outbox dual write one database per service saga choreography orchestration compensation observability micrometer tracing opentelemetry traceparent trace id span id contract testing spring cloud contract pact testcontainers spring-boot-4.pdf java note">
+              <a class="row" href="/guide/spring-boot-4.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">Spring Boot 4</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="java classes types of class concrete class abstract class final class nested class static nested class inner class local class anonymous class pojo plain old java object record class enum class singleton class utility class generic class builder pattern outer object private constructor type parameter classes.pdf java note">
+              <a class="row" href="/guide/classes.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">Java classes</span>
                 <span class="row-kind">Notes</span>
               </a>
             </li>
@@ -179,12 +245,6 @@
             <li data-keys="security fundamentals owasp top 10 2025 broken access control security misconfiguration software supply chain failures mishandling exceptional conditions same origin policy cors preflight access-control-allow-origin security headers content security policy nosniff referrer-policy permissions-policy frame-ancestors clickjacking path traversal file upload rate limiting abuse prevention credential stuffing brute force rebac threat modelling stride cia triad confidentiality integrity availability trust boundary defence in depth least privilege fail closed secure by default authentication authorization mfa multi factor webauthn passkey password storage argon2id bcrypt scrypt pbkdf2 salt pepper work factor session cookie httponly secure samesite session fixation jwt json web token alg none algorithm confusion access refresh token oauth 2.0 openid connect oidc authorization code pkce client credentials implicit deprecated rbac abac acl idor sql injection prepared statement parameterized query xss cross site scripting stored reflected dom contextual output encoding csp csrf cross site request forgery synchronizer token broken access control mass assignment ssrf server side request forgery 169.254.169.254 imds metadata encoding hashing encryption symmetric asymmetric hmac signature aes-gcm authenticated encryption tls mtls hsts certificate validation supply chain sbom log4shell dependency scanning secrets rotation security logging security-fundamentals.pdf java note">
               <a class="row" href="/guide/security-fundamentals.pdf" target="_blank" rel="noopener" data-row>
                 <span class="row-title">Security fundamentals</span>
-                <span class="row-kind">Notes</span>
-              </a>
-            </li>
-            <li data-keys="testing test pyramid ice cream cone testing trophy test levels purposes regression smoke acceptance risk based testing what not to test rest api testing status codes 401 403 unit test solitary sociable arrange act assert given when then junit 5 displayname nested parameterized csvsource methodsource property based jqwik shrinking test double dummy stub spy mock fake mockito verify meszaros classicist mockist london detroit chicago school integration test webmvctest datajpatest springboottest testcontainers serviceconnection postgres h2 contract testing pact spring cloud contract consumer driven end to end tdd red green refactor clock instant awaitility thread sleep flaky quarantine object mother test data builder fixture legacy characterization test seam feathers coverage line branch goodhart mutation testing pit pitest assertj bigdecimal testing.pdf java note">
-              <a class="row" href="/guide/testing.pdf" target="_blank" rel="noopener" data-row>
-                <span class="row-title">Testing</span>
                 <span class="row-kind">Notes</span>
               </a>
             </li>
@@ -602,10 +662,22 @@
           <summary class="topic-head">
             <svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 3.5 5 4.5-5 4.5"></path></svg>
             <h2 class="topic-label">System design</h2>
-            <span class="topic-count" data-count>18</span>
+            <span class="topic-count" data-count>20</span>
           </summary>
           <div class="topic-body">
             <ul class="rows">
+            <li data-keys="api application programming interface styles rest representational state transfer http methods get post put patch delete status codes idempotency grpc protocol buffers protobuf proto http2 unary server streaming client streaming bidirectional graphql schema query over-fetching under-fetching n+1 resolver websockets upgrade 101 switching protocols full duplex server sent events sse soap xml envelope wsdl comparison choosing api.pdf sysdes note">
+              <a class="row" href="/guide/api.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">API</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="api security ssl tls transport layer security handshake certificate chain certificate authority hostname mismatch self-signed intermediate mtls mutual tls hsts strict-transport-security https authentication methods basic auth api key bearer token cookie session httponly secure samesite csrf jwt json web token claims sub exp signature oauth open authorization grant types authorization code pkce client credentials refresh token device code openid connect oidc cors cross-origin resource sharing preflight options csp content security policy script-src nonce unsafe-inline frame-ancestors report-only api-security.pdf sysdes note">
+              <a class="row" href="/guide/api-security.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">API security</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
             <li data-keys="software architecture quality attributes ilities adr decision record layered hexagonal ports adapters clean onion modular monolith microservices distributed monolith service boundaries conway law team topologies ddd domain driven design ubiquitous language bounded context aggregate value object anticorruption layer context map event driven cqrs event sourcing c4 diagram fitness function archunit erosion strangler fig software-architecture.pdf sysdes note">
               <a class="row" href="/guide/software-architecture.pdf" target="_blank" rel="noopener" data-row>
                 <span class="row-title">Software architecture</span>
@@ -804,10 +876,22 @@
           <summary class="topic-head">
             <svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 3.5 5 4.5-5 4.5"></path></svg>
             <h2 class="topic-label">SQL &amp; data</h2>
-            <span class="topic-count" data-count>12</span>
+            <span class="topic-count" data-count>14</span>
           </summary>
           <div class="topic-body">
             <ul class="rows">
+            <li data-keys="sql structured query language keywords ddl dml dql dcl tcl datatypes int bigint decimal float varchar char text boolean date time timestamp operators comparison logical between in like is null arithmetic select insert update delete where order by limit distinct group by having aggregate count sum avg min max create alter drop truncate primary key null sql.pdf sql note">
+              <a class="row" href="/guide/sql.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">SQL</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="sql 2 two data constraints not null unique primary key foreign key check default on delete cascade restrict set null join queries inner join left join right join full outer join self join cross join on clause sub queries subquery scalar multi row correlated exists derived table in from indexes index composite index leftmost prefix explain full table scan query plan sql-2.pdf sql note">
+              <a class="row" href="/guide/sql-2.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">SQL 2</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
             <li data-keys="database fundamentals rdbms keys primary foreign surrogate normalization 1nf 2nf 3nf denormalize index b-tree composite index leftmost prefix query plan explain locking deadlock replication sharding partitioning nosql cap connection pool hikari n+1 database-fundamentals.pdf sql note">
               <a class="row" href="/guide/database-fundamentals.pdf" target="_blank" rel="noopener" data-row>
                 <span class="row-title">Database fundamentals</span>
