@@ -406,6 +406,15 @@ table {
 /* Repeat the header row on every page a long table spans */
 thead { display: table-header-group; }
 
+/* A short table that straddles a page break leaves a header row, or one row,
+   stranded on its own — which reads as a mistake rather than as a break. Five
+   body rows or fewer, so the whole table moves to the next page instead; the
+   worst case is a gap of about a sixth of a page, which is the better trade.
+   Longer tables keep breaking, with thead repeating the header above. */
+table:not(:has(tbody tr:nth-child(6))) {
+  break-inside: avoid;
+}
+
 th, td {
   padding: var(--space-2) var(--space-3);
   border: 0.5pt solid var(--color-border);
