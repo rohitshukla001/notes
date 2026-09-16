@@ -76,7 +76,7 @@
             <li>
               <a class="rail-link" href="#sec-infra" data-topic="infra">
                 <span class="rail-label">Infra &amp; ops</span>
-                <span class="rail-count" data-count>9</span>
+                <span class="rail-count" data-count>12</span>
               </a>
             </li>
             <li>
@@ -106,7 +106,7 @@
             <li>
               <a class="rail-link" href="#sec-ai" data-topic="ai">
                 <span class="rail-label">AI</span>
-                <span class="rail-count" data-count>2</span>
+                <span class="rail-count" data-count>5</span>
               </a>
             </li>
             <li>
@@ -289,7 +289,7 @@
           <summary class="topic-head">
             <svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 3.5 5 4.5-5 4.5"></path></svg>
             <h2 class="topic-label">Infra &amp; ops</h2>
-            <span class="topic-count" data-count>9</span>
+            <span class="topic-count" data-count>12</span>
           </summary>
           <div class="topic-body">
             <ul class="rows">
@@ -308,6 +308,24 @@
             <li data-keys="docker 3 docker-3 docker commands cli docker build docker run docker ps docker stop docker start docker restart docker kill docker pause docker exec docker attach docker logs docker images docker pull docker push docker tag docker rmi docker history docker save docker load docker inspect format go template docker cp docker stats docker top docker port docker diff docker network ls create connect docker volume ls create prune docker system df docker system prune builder prune dangling image docker compose up down ps logs exec config run management commands --help -it --rm -d -p -e -v --filter --format --tail --since oomkilled exit code 137 docker-3.pdf infra note">
               <a class="row" href="/guide/docker-3.pdf" target="_blank" rel="noopener" data-row>
                 <span class="row-title">Docker 3</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="rabbitmq rabbit mq message broker amqp what is rabbitmq rabbitmq vs pubsub rabbitmq vs pub/sub comparison exchange topic queue subscription terminology mapping why use rabbitmq erlang smart broker producer consumer publish convertandsend rabbitlistener prefetch qos unacknowledged message body properties content_type delivery_mode persistent transient correlation_id reply_to headers queue durable exclusive auto-delete x-message-ttl x-max-length dead letter exchange dlx exchange direct fanout topic headers default exchange binding binding key routing key wildcard star hash virtual host vhost namespace rabbitmq vs rest api synchronous asynchronous communication point-to-point publish subscribe competing consumers fanout topology publisher confirms mandatory flag exchange types direct topic fanout headers x-match queue lifecycle precondition_failed declare ready unacked exchange vs queue exchange-to-queue routing wildcards acknowledgement ack nack basicnack requeue auto ack manual ack spring auto mode message delivery semantics at most once at least once exactly once redelivered flag idempotent consumer concurrency max-concurrency channel thread safe ordering consistent hash exchange retry mechanism local retry retrytemplate delayed retry ttl dead letter x-death parking queue delayed message plugin rabbitmq.pdf infra note">
+              <a class="row" href="/guide/rabbitmq.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">RabbitMQ</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="elasticsearch elastic search engine what is elasticsearch lucene elastic stack kibana beats problem elasticsearch solves elasticsearch vs relational database full-text search inverted index analyzer tokens stemming stopwords relevance scoring bm25 ranking like scan document-oriented database denormalized json documents _index _id _version _source near-real-time search refresh segment refresh=true elasticsearch architecture cluster node index shard primary replica lucene segment coordinating node cluster health green yellow red master-eligible data ingest coordinating role number_of_shards alias reindex document crud put get post update delete field mapping dynamic mapping text keyword multi-field ignore_above object nested index naming time-based index rollover translog refresh flush merge document lifecycle provided id generated id idempotent mapping explicit mapping dynamic mapping dynamic strict mapping explosion analyzer standard analyzer keyword analyzer custom analyzer tokenizer token filter char filter _analyze match vs term match query term query query vs filter query context filter context bool must should filter must_not scoring cached cluster architecture shard allocation allocation awareness master election quorum split brain dedicated master hot warm cold frozen tier ilm scaling replicas reads primaries writes indexing refresh write path bulk api _bulk refresh_interval number_of_replicas translog durability async performance optimization deep pagination search_after from size profile api slow log force merge index false jvm heap 31gb compressed oops filesystem cache exceptions failure handling version_conflict_engine_exception retry_on_conflict mapper_parsing_exception circuit_breaking_exception es_rejected_execution_exception 429 backoff cluster_block_exception partial results _shards failed bulk errors disk watermark low high flood stage read_only_allow_delete elasticsearch.pdf infra note">
+              <a class="row" href="/guide/elasticsearch.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">Elasticsearch</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="redis in-memory data store cache what is redis why use redis redis vs database relational key-value model keyspace namespace data structures string hash list set sorted set stream redis commands set get del exists expire ttl incr hset lpush sadd zadd scan keys blocking redis client jedis lettuce spring data redis stringredistemplate connection pool redis server port 6379 redis.conf info select logical database flushdb flushall single-threaded execution model atomic commands lua script blocking io-threads redis 7 io threading rdb aof persistence maxmemory eviction lru replication sentinel cluster redis data types bitmap setbit bitcount hyperloglog pfadd pfcount geospatial geoadd geosearch redis as a cache cache invalidation cache warming cache stampede thundering herd cache penetration bloom filter cache avalanche ttl jitter cache-aside pattern race condition stale data database overload delete on write lock refill redis.pdf infra note">
+              <a class="row" href="/guide/redis.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">Redis</span>
                 <span class="row-kind">Notes</span>
               </a>
             </li>
@@ -440,10 +458,28 @@
           <summary class="topic-head">
             <svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 3.5 5 4.5-5 4.5"></path></svg>
             <h2 class="topic-label">AI</h2>
-            <span class="topic-count" data-count>2</span>
+            <span class="topic-count" data-count>5</span>
           </summary>
           <div class="topic-body">
             <ul class="rows">
+            <li data-keys="ai engineer artificial intelligence intro what is an ai engineer roles responsibilities impact on product development ai engineer vs ml engineer ai engineer vs data scientist how ai fits into software development ai vs ml vs deep learning vs generative ai machine learning supervised unsupervised reinforcement self-supervised deep learning neural network weights training embedding vector similarity generative ai large language model llm next token prediction tokens tokenization context window prompt prompt engineering zero-shot few-shot chain of thought system user assistant messages temperature top_p max_tokens stop frequency penalty hallucination grounding retrieval ai-engineer.pdf ai note">
+              <a class="row" href="/guide/ai-engineer.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">AI Engineer</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="llm applications ai agent agentic workflow agent vs chatbot agent loop step limit tools tool calling function calling model context protocol mcp mcp host mcp client mcp server mcp tool mcp resources mcp prompts mcp vs api mcp vs function calling json-rpc stdio transport agent memory conversation memory short-term memory long-term memory semantic memory user context conversation history memory storage summarization rag retrieval augmented generation embedding vector database vector storage vector search hnsw ivf ann pgvector pinecone weaviate qdrant milvus faiss recall semantic search hybrid search chunking overlap data classification fine-tuning lora context engineering context layer prompt caching response caching semantic caching exact match caching cache key design cache invalidation when caching is unsafe redis llm cache llm latency streaming time to first token llm cost token cost model selection context reduction batching ai gateway model routing fallback provider abstraction circuit breaker cost control observability rate limits 429 backoff jitter timeouts cancellation idempotency partial failure retry failure handling llm security prompt injection least privilege llm evaluation golden set response quality groundedness sdk adk google adk claude agent sdk langgraph llm-applications.pdf ai note">
+              <a class="row" href="/guide/llm-applications.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">LLM Applications</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
+            <li data-keys="generative ai genai fundamentals what is generative ai generative ai vs traditional ai predictive ai discriminative model generative ai vs machine learning what is an llm large language model foundation model pre-training post-training instruction tuning rlhf transformer architecture self-attention attention feed-forward training vs inference model parameters weights quantization lora tokenization byte pair encoding bpe vocabulary input tokens output tokens prompt tokens completion tokens context window token limits max_tokens finish_reason context overflow truncation sliding window token counting jtokkit usage token cost pricing prompt size optimization temperature top-k top-p nucleus sampling sampling parameters prompt engineering system prompts user prompts zero-shot few-shot role prompting context injection prompt templates structured prompts output constraints json schema structured output prompt versioning prompt evaluation golden set llm api java openai chat completions httpclient streaming sse retries backoff 429 error handling spring ai chatclient openai-java sdk google vertex ai gemini model garden iam service account generative-ai.pdf ai note hallucination why llms hallucinate confident and false grounding">
+              <a class="row" href="/guide/generative-ai.pdf" target="_blank" rel="noopener" data-row>
+                <span class="row-title">Generative AI</span>
+                <span class="row-kind">Notes</span>
+              </a>
+            </li>
             <li data-keys="ai roadmap  roadmap.pdf ai map">
               <a class="row" href="/docs/Roadmap.pdf" target="_blank" rel="noopener" data-row>
                 <span class="row-title">AI roadmap</span>
